@@ -75,7 +75,7 @@ let record = {
         // $(document.head).append('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">')
 
         // $.post('http://localhost:8090/record/history', this.data(), function (res) {
-        $.post('http://119.91.29.230:8090/record/history', this.data(), function (res) {
+        $.post('http://yoururl/record/history', this.data(), function (res) {
             if (res.code === 0) {
                 if (res.data.length > 0) {
                     record.records = res.data
