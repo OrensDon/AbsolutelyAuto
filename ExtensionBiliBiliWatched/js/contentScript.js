@@ -66,7 +66,7 @@ let record = {
     },
     save: function () {
         // $.post('http://localhost:8090/record/add', this.data(), function (res) {
-        $.post('http://119.91.29.230:8090/record/add', this.data(), function (res) {
+        $.post('http://yoururl/record/add', this.data(), function (res) {
 
         })
     },
