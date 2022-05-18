@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "bw",
+  "version": "1.0.0",
+  "description": "记录看过的bilibili视频",
+  "icons":
+  {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background":
+  {
+    "page": "html/bg.html"
+  },
+  "browser_action":
+  {
+    "default_icon": "icon.png",
+    "default_title": "观看记录",
+    "default_popup": "html/popup.html"
+  },
+  "content_scripts":
+  [
+    {
+      "matches": ["https://www.bilibili.com/video/*"],
+      "js": ["js/jq/jquery.min.js", "js/contentScript.js"],
+      "css": ["css/custom.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions":
+  [
+    "contextMenus",
+    "declarativeContent",
+    "tabs",
+    "notifications",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ]
+}

@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: dimgray;
+}
+
+body {
+    padding: 10px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
